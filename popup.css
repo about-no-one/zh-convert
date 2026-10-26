@@ -1,0 +1,14 @@
+:root { color-scheme: light dark; }
+body { width: 300px; margin: 0; padding: 14px; font: 13px/1.4 system-ui, sans-serif; }
+h1 { font-size: 16px; margin: 0 0 12px; display: flex; justify-content: space-between; align-items: baseline; }
+h1 span { font-weight: 400; opacity: .6; font-size: 14px; }
+label { display: block; margin-bottom: 10px; font-weight: 600; }
+select { display: block; width: 100%; margin-top: 4px; padding: 6px; font: inherit; font-weight: 400; }
+label.check { display: flex; gap: 8px; align-items: center; font-weight: 400; }
+.btns { display: flex; gap: 8px; margin-top: 4px; }
+button { flex: 1; padding: 8px; border: 0; border-radius: 6px; background: #c0392b; color: #fff; font: inherit; font-weight: 600; cursor: pointer; }
+button:hover { filter: brightness(1.1); }
+button.secondary { background: transparent; color: inherit; border: 1px solid #8886; }
+#status { min-height: 18px; margin: 10px 0 0; opacity: .8; }
+#status.err { color: #e74c3c; opacity: 1; }
+.hidden { display: none; }

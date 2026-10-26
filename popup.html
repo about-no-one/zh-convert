@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>zh-convert <span>简 ⇄ 繁</span></h1>
+
+  <label>Chuyển đổi
+    <select id="mode">
+      <option value="s2t">Giản thể → Phồn thể (简→繁)</option>
+      <option value="t2s">Phồn thể → Giản thể (繁→简)</option>
+      <option value="none">Giữ nguyên chữ (chỉ thêm pinyin)</option>
+    </select>
+  </label>
+
+  <label id="variantRow">Kiểu phồn thể
+    <select id="variant">
+      <option value="t">Chuẩn (OpenCC)</option>
+      <option value="tw">Đài Loan (繁體·台灣)</option>
+      <option value="hk">Hồng Kông (繁體·香港)</option>
+    </select>
+  </label>
+
+  <label class="check"><input type="checkbox" id="pinyin" checked> Hiện pinyin bên dưới chữ</label>
+
+  <label id="toneRow">Kiểu dấu thanh
+    <select id="tone">
+      <option value="symbol">Dấu (nǐ hǎo)</option>
+      <option value="num">Số (ni3 hao3)</option>
+      <option value="none">Không thanh (ni hao)</option>
+    </select>
+  </label>
+
+  <div class="btns">
+    <button id="apply">Chuyển trang này</button>
+    <button id="restore" class="secondary">Khôi phục</button>
+  </div>
+  <p id="status"></p>
+  <script src="popup.js"></script>
+</body>
+</html>
